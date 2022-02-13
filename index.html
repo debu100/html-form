@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Good Vibes Form</title>
+	<link rel="stylesheet"  href="style.css"></link>
+</head>
+<body>
+	<h1>Good Vibes Form</h1>
+	<form><p>Tell us something positive that happened to you today.</p><br><br>
+		<label class="naame" for="name">Name</label>
+		<input id="name" type="text" name="fullname" placeholder="Enter Your Full Name" required><br><br>
+		<label class ="emmail"for="email">Email</label>
+		<input id="email" type="email" name="email-id" placeholder="Enter Your Email address" required><br><br>
+		<label for="rating">On a scale of 1-10, how good was it?</label>
+		<input id="rating" type="number" name="rate" placeholder="Enter a number between 1-10" required><br><br><br>
+		<label class="selection" for="select">Where did it happen?</label>
+	<select name="location" id="select">
+    	<option value="">--Please choose an option--</option>
+    	<option value="Home">At Home</option>
+    	<option value="commute">On my Commute</option>
+    	<option value="Work">At WorkPlace</option>
+    	<option value="Street">On the Street</option>
+    	<option value="Other">Other</option>
+   	</select><br><br><br>
+   	<label class="time" for="experience">At what time of day did it happen?</label>
+   	<div>
+   	<input type="radio" id="morning" name="time of day" value="morning">
+   	<label class="time-1" for="morning">Morning</label>
+   	</div>
+   	<div>
+   	<input type="radio" id="afternoon"name="time of day" value="afternoon">
+   	<label class="time-2" for="afternoon">Afternoon</label>
+   	</div>
+   	<div>
+   	<input type="radio" id="evening" name="time of day" value="evening">
+   	<label class="time-3" for="evening">Evening</label><br><br><br>
+   	</div><!--using divs for keeping the buttons together righr one after the other-->
+   	<label id="check" for="checking">What emotions did you experience?<br>(Select all that apply)</label>
+   	<div>
+   <input type="checkbox" id="excited" name="excited">     
+  <label class="feeling-1" for="excited">Excited</label>
+	</div>
+	<div>
+  <input type="checkbox" id="elated" name="elated">
+  <label class="feeling-2" for="elated">Elated</label>
+	</div>
+	<div>
+  <input type="checkbox" id="humbled" name="humbled">
+  <label class="feeling-3" for="humbled">Humbled</label>
+	</div>
+	<div>
+  <input type="checkbox" id="loved" name="loved">
+  <label class="feeling-4" for="loved">Loved</label>
+	</div>
+	<div>
+  <input type="checkbox" id="enthu" name="enthu">
+  <label class="feeling-5" for="enthu">Enthusiastic</label><br><br>
+	</div>
+	<label id="share"for="sharing">Please describe your positive experience:</label>
+<textarea id="sharing" name="share">
+Enter your experience here!!!
+</textarea><br><br>
+<button>Submit</button>
+</form>
+</body>
+</html>
