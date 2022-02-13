@@ -209,6 +209,6 @@ button{
 	}
 	form{
 		width: 170%;
-		height: 1500px;
+		min-height: 100%;
 	}
 }
